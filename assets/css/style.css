@@ -2,4 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    -spy--topbanner-black:#080b12;
+    -spy--main-black:#141922;
+    -spy--bottom-darckgrey:#282828;
+    -spy--text-grey:#B1B2B5;
+    -spy--margin-lt-green:#adff2f;
+    -spy--whight:#ffffff;
+}
+
+
+
+.light-green {
+    background-color: var(-spy--margin-lt-green);
+}
+
+h2 {
+    padding-bottom: 1.5rem;
+}
+
+h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h5 {
+    color: var(-spy--text-grey);
+}
+
+
+/* Deskstop */
+@media screen and (max-width: 1440px) {
+    
+}
+/* Table-LG */
+@media screen and (max-width: 878px) {
+    
+}
+/* Tablet-SM */
+@media screen and (max-width: 639px) {
+    
+}
+/* Mobile */
+@media screen and (max-width: 552px) {
+    
 }

@@ -6,40 +6,112 @@
 }
 
 :root {
-    -spy--topbanner-black:#080b12;
-    -spy--main-black:#141922;
-    -spy--bottom-darckgrey:#282828;
-    -spy--text-grey:#B1B2B5;
-    -spy--margin-lt-green:#adff2f;
-    -spy--whight:#ffffff;
+    --spy--topbanner-black:#080b12;
+    --spy--main-black:#141922;
+    --spy--bottom-darckgrey:#282828;
+    --spy--text-grey:#B1B2B5;
+    --spy--margin-lt-green:#adff2f;
+    --spy--whight:#ffffff;
 }
 
-
+body {
+    max-width: 1900px;
+    height: 100vh;
+    background-color: var(--spy--main-black);
+}
 
 .light-green {
-    background-color: var(-spy--margin-lt-green);
+    background-color: var(--spy--margin-lt-green);
 }
 
 h2 {
     padding-bottom: 1.5rem;
+    color: var(--spy--whight);
 }
 
 h3 {
-    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 h5 {
-    color: var(-spy--text-grey);
+    color: var(--spy--text-grey);
 }
 
+.col-xl-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col-xl-4 {
+    width: calc(100% / 12 * 4);
+}
+
+/* Utilitis */
+
+
+.col_played {
+    display: flex;
+}
+
+.col_played > div {
+    padding: .5rem;
+    background-color: var(--spy--whight);
+    width: 100%;
+    height: auto;
+}
+
+.row_played .img {
+    width: 180px;
+    height: 180px;
+    background-color: red;
+}
+/* Recently played */
+
+.col_john {
+    display: flex;
+}
+
+.col_john > div {
+    padding: .5rem;
+    background-color: var(--spy--whight);
+}
+
+.col_john .img {
+    width: 180px;
+    height: 180px;
+    background-color: red;
+}
+/* John Doe */
+
+.col_popolari {
+    display: flex;
+}
+
+.col_popolari > div {
+    padding: .5rem;
+    background-color: var(--spy--whight);
+}
+
+.col_popolari .img_radius {
+    width: 180px;
+    height: 180px;
+    background-color: red;
+}
+/* Artisti piu' ascoltati */
 
 /* Deskstop */
 @media screen and (max-width: 1440px) {
+ 
     
+
+
 }
 /* Table-LG */
 @media screen and (max-width: 878px) {
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
     
 }
 /* Tablet-SM */

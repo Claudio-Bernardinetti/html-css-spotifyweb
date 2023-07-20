@@ -78,14 +78,14 @@ h6 {
     float: left;
     background-color: black;
     width: 230px;
-    height: calc(100vh - 90px);
-    overflow-y: auto;
+    height: (100vh - 90px);
+    position: fixed;
 }
 
 .container_left .top {
     width: 190px;
     height: auto;
-    margin-bottom: 40px;
+    padding-bottom: 190px;
 }
 
 .container_left .bottom {
@@ -196,7 +196,7 @@ h6 {
 
 .container_right {
     width: calc(100% - 230px);
-    height: 100%;
+    height: (100vh - 90px);
     right: 0;
     overflow-y: auto;
     position: absolute; 

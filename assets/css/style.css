@@ -23,7 +23,10 @@
 body {
     max-width: 1900px;
     background-color: var(--spy--main-black);
+    
 }
+
+
 
 .light-green {
     background-color: var(--spy--margin-lt-green);
@@ -53,14 +56,16 @@ h5 {
 /* Utilitis */
 
 .container_right {
-    width: 100%;
-    
+    width: calc(100% - 230px);
+    right: 0;
+    overflow-y: auto;
+    position: absolute; 
 }
 
 .row_played {
-    
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .col_played {
@@ -84,7 +89,6 @@ h5 {
 /* Recently played */
 
 
-
 .row_john {
     display: flex;
     flex-wrap: wrap;
@@ -105,9 +109,9 @@ h5 {
     background-image: url(../img/stranger.jpeg);
     background-size: cover;
     aspect-ratio: 1 / 1;
-    
 }
 /* John Doe */
+
 
 .row_artisti {
     display: flex;
@@ -133,21 +137,24 @@ h5 {
 }
 /* Artisti piu' popolari */
  
-
-
 .container_left {
+    position: relative;
     float: left;
     background-color: black;
     min-width: 230px;
     height: 100vh;
 }
+
 /* Section left */
 
 .container_bottom {
+    position: relative;
     background-color: var(--spy--bottom-darckgrey);
     height: 90px;
     width: 100%;
-    overflow: hidden;
+    bottom: 0;
+    position: fixed;
+    
 }
 /* Section bottom */
 
@@ -161,11 +168,12 @@ h5 {
     .col-xl-4 {
         width: calc(100% / 12 * 4);
     }
+    /* Utilitis */
 
     .container_right {
         max-width: 1440px;
     }
-
+    /* Section right */
 }
 /* Table-LG */
 @media screen and (max-width: 878px) {
@@ -176,14 +184,17 @@ h5 {
     .col-lg-3 {
         width: calc(100% / 12 * 3);
     }
+    /* Utilitis */
 
     .container_right {
         max-width: 878px;
     }
+    /* Section right */
 
     .container_artisti {
         display: none;
     }
+    /* Section artisti */
   
 }
 /* Tablet-MD */
@@ -192,18 +203,12 @@ h5 {
     .col-md-6 {
         width: 50%;
     }
+    /* Utilitis */
 
     .container_right {
         max-width: 639px;
     }
-
-    .container_john {
-        display: none;
-    }
-
-    .container_artisti {
-        display: none;
-    }
+    /* Section right */
 
 }
 /* Mobile-SM */
@@ -212,17 +217,19 @@ h5 {
     .col-sm-6 {
         width: 50%;
     }
+    /* Utilitis */
 
     .container_right {
         max-width: 552px;
     }
 
-    .container_john {
-        display: none;
+    .container_right {
+        width: calc(100% - 50px);
     }
+    /* Section right */
 
-    .container_artisti {
-        display: none;
+    .container_left {
+       min-width: 50px;
     }
-
+    /* Section left */
 }

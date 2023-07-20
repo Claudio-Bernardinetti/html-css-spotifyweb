@@ -84,8 +84,6 @@ h6 {
 .container_left .top {
     width: 190px;
     height: auto;
-    margin-top: -20px;
-    
 }
 
 .container_left .bottom {
@@ -157,12 +155,15 @@ h6 {
 }
 
 .top_banner button {
+    float: right;
+    background-color: var(--spy--topbanner-black);
+    color:var(--spy--whight);
+    border: solid 1px var(--spy--whight);
     border-radius: 30px;
     padding: 0.5rem;
     margin-top: 1rem;
-    float: right;
+    margin-right: 0.2rem;
 }
-
 /* Top Banner */
 
 .container_right {
@@ -319,17 +320,45 @@ h6 {
     }
     /* Utilitis */
 
+    .container_left {
+        max-width: 50px;
+     }
+
+     .logo {
+        display: none;
+     }
+
+     .logo_sm {
+        display: block;
+     }
+
+     .container_left img {
+       margin-top: 1rem;
+       
+     }
+
+     .container_left a, span, hr, h5 {
+        display: none;
+     }
+
+     .card_plus {
+        display: none;
+     }
+
+     .container_left .top {
+        padding-bottom: 180px;
+     }
+     /* Section left */
+    
     .container_right {
         max-width: 576px;
+        
     }
 
     .container_right {
         width: calc(100% - 50px);
     }
-    /* Section right */
 
-    .container_left {
-       min-width: 50px;
-    }
-    /* Section left */
+    
+    /* Section right */
 }

@@ -30,6 +30,7 @@ body {
 }
 
 h2 {
+    padding-left: 0.5rem;
     padding-bottom: 1.5rem;
     color: var(--spy--whight);
 }
@@ -72,26 +73,26 @@ h6 {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content:space-between;
     align-items: center;
     float: left;
     background-color: black;
-    min-width: 230px;
-    height: 90vh;
+    width: 230px;
+    height: calc(100vh - 90px);
     overflow-y: auto;
 }
 
 .container_left .top {
     width: 190px;
     height: auto;
+    margin-bottom: 40px;
 }
 
 .container_left .bottom {
-    
     width: 190px;
-    height: auto;
-    margin-top: 140px;
+    height: auto;  
 }
+
 /* Layout */
 
 .container_left .row {
@@ -112,12 +113,16 @@ h6 {
 }
 
 .left a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: .8rem;
     text-decoration: none;
     color: var(--spy--text-grey);
     line-height: 1.5rem;
     padding-left: 0.1rem;
+}
+
+.left a:hover {
+    color: var(--spy--whight);
 }
 
 .left i {
@@ -144,6 +149,7 @@ h6 {
 /* Section Left End*/
 
 /* Section Right Start */
+
 .container_right .top_banner {
     position: relative;
     top: 0;
@@ -165,6 +171,28 @@ h6 {
     margin-right: 0.2rem;
 }
 /* Top Banner */
+
+.right_menu {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.right_menu a {
+    text-decoration: none;
+}
+
+.right_menu a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .8rem;
+    text-decoration: none;
+    color: var(--spy--text-grey);
+    padding: 1rem;
+}
+
+.right_menu a:hover {
+    color: var(--spy--whight);
+}
+/* Menu rigth section */
 
 .container_right {
     width: calc(100% - 230px);
@@ -321,9 +349,29 @@ h6 {
     /* Utilitis */
 
     .container_left {
-        max-width: 50px;
+        width: 50px;
+        justify-content: space-between;
      }
 
+     .container_left .top {
+        width: 50px;
+     }
+
+     .container_left .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .container_left .bottom {
+        width: 50px;
+        height: auto;  
+     } 
+
+     .container_left .card_download {
+        margin-left: -0.6rem;
+     }
+     
      .logo {
         display: none;
      }
@@ -345,9 +393,9 @@ h6 {
         display: none;
      }
 
-     .container_left .top {
+     /* .container_left .top {
         padding-bottom: 180px;
-     }
+     } */
      /* Section left */
     
     .container_right {

@@ -74,6 +74,13 @@ h6 {
     aspect-ratio: 1 / 1;
 }
 
+.card .img_heavy:hover {
+    background-image: url(../img/circle-play-regular.svg);
+    background-color: rgba(rgb(57, 55, 55), rgb(55, 58, 55), rgb(59, 59, 62), opacity, 0.1);
+    filter: opacity(1);
+    
+}
+
 .card .text {
     text-align: center;
 }

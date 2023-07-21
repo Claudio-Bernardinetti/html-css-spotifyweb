@@ -299,22 +299,58 @@ h6 {
     align-items: center;
 }
 
-
-
 /* Bottom left */
 .container_bottom .left h5 {
     padding-bottom: 0;
     padding-left: 0.5rem;
+    
 }
 
 .container_bottom .left h6 {
     padding-bottom: 1.8rem;
     padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
+.container_bottom .icon i{
+    padding-left: 1rem;
+}
 
-
+.container_bottom .icon i:hover {
+    color: var(--spy--whight);
+}
 /* Utiliti bottom left */
+
+.container_bottom .midle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container_bottom .midle .top_bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container_bottom .midle .top_bar a {
+    padding: 0.5rem;
+}
+
+.container_bottom .midle .top_bar i{
+    color: var(--spy--whight);
+}
+
+.container_bottom .play:hover {
+    transition: .2s;
+    transform: scale(1.2);
+}
+
+.container_bottom .midle .bottom_bar {
+    display: flex;
+}
+
+/* Bottom midle */
 
 /* Section Bottom End */
 
@@ -435,7 +471,14 @@ h6 {
     .container_right {
         width: calc(100% - 50px);
     }
+    /* Section right */
+
+    .container_bottom h5{
+        display: block;
+    }
+    /* Bottom laft */
 
     
-    /* Section right */
+
+    /* Section bottom */
 }

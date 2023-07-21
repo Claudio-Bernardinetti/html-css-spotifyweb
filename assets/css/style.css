@@ -78,10 +78,10 @@ h6 {
     text-align: center;
 }
 
-
 /* Utilitis */ 
 
 /* Section Left Start */
+
 .container_left {
     position: relative;
     display: flex;
@@ -91,21 +91,29 @@ h6 {
     float: left;
     background-color: black;
     width: 230px;
-    height: (100vh - 90px);
+    height: calc(100vh - 90px);
     position: fixed;
 }
 
 .container_left .top {
-    width: 190px;
-    height: auto;
-    padding-bottom: 190px;
+    padding-left: 20px;
+    margin-left: 0px;
 }
 
 .container_left .bottom {
     width: 190px;
-    height: auto;  
 }
 
+.container_left .home {
+    border-left: 2px solid var(--spy--margin-lt-green);
+    padding-left: 20px;
+    margin-left: -20px;
+} 
+
+.side-bar-overflow {
+    height:180px;
+    overflow-y: auto;
+}
 /* Layout */
 
 .container_left .row {
@@ -127,10 +135,12 @@ h6 {
 
 .left a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: .7rem;
+    font-size: .8rem;
     text-decoration: none;
     color: var(--spy--text-grey);
-    line-height: 1.2rem;
+    line-height: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
     padding-left: 0.1rem;
 }
 
@@ -140,6 +150,7 @@ h6 {
 
 .left i {
     color: var(--spy--text-grey);
+    font-size: 1.5rem;
 }
 
 .card_jd {
@@ -212,18 +223,15 @@ h6 {
     color: var(--spy--whight);
 }
 
-
-
 .right_menu .underline{ 
+    padding-bottom: 0.2rem;
     border-bottom: 1px solid var(--spy--margin-lt-green);
 }
-
-
 /* Menu rigth section */
 
 .container_right {
     width: calc(100% - 230px);
-    height: (100vh - 90px);
+    height: calc (100vh - 90px);
     right: 0;
     overflow-y: auto;
     position: absolute; 
@@ -398,8 +406,6 @@ h6 {
     transition: .2s;
     transform: scale(1.2);
 }
-
-
 /* Bottom midle top */
 
 .container_bottom .midle .bottom_bar {
@@ -538,7 +544,8 @@ h6 {
 /* Section Bottom End */
 
 /* Deskstop-XL */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px),
+       screen and (max-height: 600px) {
  
     .col-xl-2 {
         width: calc(100% / 12 * 2);
@@ -555,7 +562,8 @@ h6 {
     /* Section right */
 }
 /* Table-LG */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px),
+       screen and (max-height: 400px) {
 
     .col-lg-6 {
         width: 50%;
@@ -598,6 +606,7 @@ h6 {
 
     .container_left {
         width: 50px;
+        height: calc(100vh - 90px);
         justify-content: space-between;
      }
 
@@ -641,9 +650,13 @@ h6 {
         display: none;
      }
 
-     /* .container_left .top {
-        padding-bottom: 180px;
-     } */
+     .card.home  {
+       border-left: 3px solid var(--spy--margin-lt-green);
+     }
+
+     .container_left .top {
+        padding-left: 0;
+     }
      /* Section left */
     
     .container_right {

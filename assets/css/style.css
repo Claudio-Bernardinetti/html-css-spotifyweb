@@ -181,8 +181,14 @@ h6 {
     border-radius: 30px;
     padding: 0.5rem;
     margin-top: 1rem;
-    margin-right: 0.2rem;
+    margin-right: 0.5rem;
 }
+
+.top_banner button:hover {
+    transition: .2s;
+    transform: scale(1.1);
+}
+
 /* Top Banner */
 
 .right_menu {
@@ -205,6 +211,14 @@ h6 {
 .right_menu a:hover {
     color: var(--spy--whight);
 }
+
+
+
+.right_menu .underline{ 
+    border-bottom: 1px solid var(--spy--margin-lt-green);
+}
+
+
 /* Menu rigth section */
 
 .container_right {

@@ -127,8 +127,8 @@ h6 {
 }
 
 .container_left .home {
-    border-left: 2px solid var(--spy--margin-lt-green);
-    padding-left: 20px;
+    border-left: 3px solid var(--spy--margin-lt-green);
+    padding-left: 19px;
     margin-left: -20px;
 } 
 
@@ -168,6 +168,11 @@ h6 {
 
 .left a:hover {
     color: var(--spy--whight);
+}
+
+.card_jd:hover img {
+    transition: .2s;
+    transform: scale(1.2);
 }
 
 .left i {
@@ -397,6 +402,7 @@ h6 {
 
 .container_bottom .icon i{
     padding-left: 1rem;
+    font-size: 1rem;
 }
 
 .container_bottom .icon i:hover {
@@ -640,6 +646,7 @@ h6 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 1rem;
      }
 
      .container_left .bottom {
@@ -657,11 +664,11 @@ h6 {
 
      .logo_sm {
         display: block;
+        margin-bottom: 1rem;
      }
 
-     .container_left img {
-       margin-top: 1rem;
-       
+     .card_search {
+        margin-bottom: 1rem;
      }
 
      .container_left a, span, hr, h5 {
@@ -673,11 +680,18 @@ h6 {
      }
 
      .card.home  {
-       border-left: 3px solid var(--spy--margin-lt-green);
+       border-left: 4px solid var(--spy--margin-lt-green);
+       padding-left: 9px;
+       margin-left: -18px;
+       margin-bottom: 1rem;
      }
 
      .container_left .top {
         padding-left: 0;
+     }
+
+     .card_jd {
+        padding-bottom: 1rem;
      }
      /* Section left */
     
